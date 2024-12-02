@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cross browser suite" parallel="classes" >
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="demoqatestCases.AlertWindowFramesTests"></class>
+        </classes>
+    </test>
+    <test name="firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="demoqatestCases.ElementsTests"></class>
+            <!-- <class name="demoqatestCases.FormsTest"></class>
+             <class name="demoqatestCases.WidgetsTests"></class>-->
+        </classes>
+    </test>
+</suite>
